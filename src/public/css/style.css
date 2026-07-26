@@ -1,0 +1,147 @@
+:root {
+  --navy: #0f2647;
+  --gold: #d9a441;
+  --bg: #f6f5f2;
+  --text: #1c1c1c;
+  --card-bg: #ffffff;
+  --border: #e2e0da;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 20px 60px;
+}
+
+header {
+  text-align: center;
+  padding: 32px 0 16px;
+}
+
+header h1 {
+  color: var(--navy);
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  color: #666;
+  margin-top: 4px;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  color: var(--navy);
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+form label {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+form input, form select {
+  width: 100%;
+  margin-top: 4px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  background: var(--navy);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover { background: #163461; }
+
+#form-status { color: var(--gold); font-weight: 600; }
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.stat-label {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.chart {
+  min-height: 200px;
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding-top: 12px;
+}
+
+.bar {
+  background: var(--gold);
+  border-radius: 4px 4px 0 0;
+  flex: 1;
+  position: relative;
+  min-width: 20px;
+}
+
+.bar-label {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.7rem;
+  color: #666;
+}
+
+.bar-value {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--navy);
+}

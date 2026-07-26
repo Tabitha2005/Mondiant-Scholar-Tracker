@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mondiant Initiative — Scholarship Applicant Portal</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Mondiant Initiative</h1>
+      <p class="subtitle">Scholarship Applicant Onboarding</p>
+    </header>
+
+    <section class="card">
+      <h2>Application Checklist</h2>
+      <ul>
+        <li>National exam results / transcripts</li>
+        <li>Proof of refugee status or referral</li>
+        <li>Personal statement</li>
+        <li>Two references</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Key Dates</h2>
+      <ul>
+        <li>Applications open: rolling</li>
+        <li>Info sessions: check with your local coordinator</li>
+        <li>Leadership Academy intake: announced each term</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Tell us you're interested</h2>
+      <form id="applicant-form">
+        <label>Full name<input type="text" name="fullName" required /></label>
+        <label>Email<input type="email" name="email" required /></label>
+        <label>Phone<input type="tel" name="phone" /></label>
+        <label>Region<input type="text" name="region" placeholder="e.g. Kigali, Nyabiheke" /></label>
+        <label>What are you most interested in?
+          <select name="interest">
+            <option value="scholarship">Scholarship</option>
+            <option value="leadership-academy">Leadership Academy</option>
+            <option value="vocational">Vocational Program</option>
+          </select>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="form-status"></p>
+    </section>
+  </main>
+
+  <script src="/js/form.js"></script>
+</body>
+</html>

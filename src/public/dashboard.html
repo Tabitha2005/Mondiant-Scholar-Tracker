@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mondiant Scholar Tracker — Live Dashboard</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Live Engagement Dashboard</h1>
+      <p class="subtitle">Mondiant Initiative × Flowcode API Innovation Project</p>
+    </header>
+
+    <section class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-number" id="total-scans">—</span>
+        <span class="stat-label">Total Scans</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" id="total-applicants">—</span>
+        <span class="stat-label">Applicants</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" id="completion-rate">—</span>
+        <span class="stat-label">Completion Rate</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Scans Over Time</h2>
+      <div id="scans-chart" class="chart"></div>
+    </section>
+
+    <section class="card">
+      <h2>Applicants by Region</h2>
+      <div id="region-chart" class="chart"></div>
+    </section>
+  </main>
+
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>
